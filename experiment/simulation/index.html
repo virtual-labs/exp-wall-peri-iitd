@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/progressBar.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="./js/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./css/imgs.css" />
     <link rel="stylesheet" href="./css/scenes.css" />
@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="./css/quiz.css" />
     <link rel="stylesheet" href="./css/certificate.css" />
     <link rel="stylesheet" href="./css/chart.css" />
+
+    <link rel="stylesheet" href="./final_styling/fix_styling.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./final_styling/fix_styling.js"></script>
   </head>
   <img src="" alt="" />
   <body>
@@ -53,7 +57,7 @@
               <a>
                 <span class="step">
                   <span
-                    >Placing HD Towers (Heavy Duty Towers) in the lab.</span
+                    >Construct one side of a wall.</span
                   >
                 </span>
               </a>
@@ -61,7 +65,7 @@
             <li>
               <a>
                 <span class="step">
-                  <span>Attaching horizontal and diagonal bracing to support HD Tower.</span>
+                  <span>Attaching alignment clamp and nut to connect the wall corners rigidly.</span>
                 </span>
               </a>
             </li>
@@ -69,31 +73,8 @@
               <a>
                 <span class="step">
                   <span>
-                    Placing aluminium beam and timber beam on the top of basic frame.
+                    Construct remaining sides of the wall using compensation waller and stopends.
                   </span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="step">
-                  <span>Placing sheathing on the top of timber beam.</span>
-                </span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="step">
-                  <span
-                    >Placing inner and outer beam with the help of beam forming support (BFS) with extension.</span
-                  >
-                </span>
-              </a>
-            </li>
-            <li>
-              <a>
-                <span class="step">
-                  <span>Making Slab using short prop, aluminum beam and timber beam.</span>
                 </span>
               </a>
             </li>
@@ -141,10 +122,10 @@
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
+              <!-- <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
-              <div class="progress-step" data-title=""></div>
-              <!-- <div class="progress-step" data-title=""></div> -->
+              <div class="progress-step" data-title=""></div> -->
               <!-- <div class="progress-step" data-title=""></div> -->
               <!-- <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
@@ -196,13 +177,13 @@
                 src="./src/images/template_imgs/blinkArrow.webp"
               />
             
-            <!-- <section class="anime-main"> -->
-            <section class="anime-main" onmousemove="getCursor(event)">
+             <section class="anime-main">
+            <!-- <section class="anime-main" onmousemove="getCursor(event)"> -->
               <!-- * Welcome note About Experiment-->
               <div class="welcome-box">
                 <img
                   class="iit-logo"
-                  src="./src/images/iit-delhi-logo.png"
+                  src="./src/images/template_imgs/iit-delhi-logo.png"
                   alt=""
                 />
                 <div class="title">
@@ -220,7 +201,7 @@
                 <div class="prof-description">
                   <img
                     class="prof-img"
-                    src="./src/images/prof_image_kn_jha.jpeg"
+                    src="./src/images/template_imgs/prof_image_kn_jha.jpeg"
                     alt="Prof. K. N. Jha Image"
                   />
                   <span>Prof. K. N. Jha</span>
@@ -408,7 +389,7 @@
               <!-- * End Certificate Template -->
               <div class="certificate">
                 <div class="header">
-                  <img src="./src/images/logo.png" alt="" class="logo" />
+                  <img src="./src/images/template_imgs/logo.png" alt="" class="logo" />
                   <span class="title cursive">Certificate of Completion</span>
                 </div>
                 <div class="student-detail">
@@ -427,7 +408,7 @@
                     <span
                       style="font-size: 1.5rem; text-transform: capitalize"
                       class="bold sans red"
-                      >Foundation in foamwork</span
+                      >Foundation in Formwork</span
                     >
                   </div>
                   <div class="">
@@ -950,6 +931,11 @@ alt="temp23"
 <img
 class="main-window-imgs"
 src="./src/images/template_imgs"
+alt="template_imgs"
+/>
+<img
+class="main-window-imgs"
+src="./src/images/objective.png"
 alt="template_imgs"
 />
 
