@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/certificate.css" />
     <link rel="stylesheet" href="./css/chart.css" />
 
-    <link rel="stylesheet" href="./final_styling/fix_styling.css">
+    <link rel="stylesheet" href="./final_styling/fix_styling.css" />
     <script src="./js/jquery.min.js"></script>
     <script src="./final_styling/fix_styling.js"></script>
   </head>
@@ -56,9 +56,7 @@
             <li>
               <a>
                 <span class="step">
-                  <span
-                    >Construct one side of a wall.</span
-                  >
+                  <span>Construct one side of a wall.</span>
                 </span>
               </a>
             </li>
@@ -72,9 +70,7 @@
             <li>
               <a>
                 <span class="step">
-                  <span>
-                    Construct remaining sides of the wall using compensation waller and stopends.
-                  </span>
+                  <span> Construct remaining sides of the wall using compensation waller and stopends. </span>
                 </span>
               </a>
             </li>
@@ -113,10 +109,7 @@
           <section class="progress-bar">
             <div class="progressbar">
               <div class="progress" id="progress"></div>
-              <div
-                class="progress-step progress-step-active"
-                data-title=""
-              ></div>
+              <div class="progress-step progress-step-active" data-title=""></div>
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
               <div class="progress-step" data-title=""></div>
@@ -138,13 +131,45 @@
             <!-- transparent layer for question -->
             <div class="transparent-box"></div>
             <section class="anime-header">
+              <div id="drawer-toggle" class="drawer-toggle" title="Toggle Sidebar">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
               <p style="text-transform: uppercase">Wall (PERI)</p>
-              <img
-                class="btn btn-mute"
-                style="height: 40px; z-index: 5; position: absolute; right: 5px"
-                src="./src/images/template_imgs/speech_off_btn.png"
-                title="Click To Mute"
-              />
+              <div class="header-controls">
+                <div class="speed-control" title="Animation Speed">
+                  <div class="icon-wrapper" title="Click to Reset Speed">
+                    <svg
+                      class="speed-icon"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10" opacity="0.4" />
+                      <path d="M12 2a10 10 0 0 1 10 10" />
+                      <path
+                        d="M12 12l0-7"
+                        id="speed-needle"
+                        style="transform-origin: 12px 12px; transition: transform 0.2s ease;" />
+                      <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+                    </svg>
+                    <span class="speed-badge" id="speed-badge"></span>
+                  </div>
+                  <input type="range" id="speed-slider" min="0.5" max="3" step="0.1" value="1" />
+                </div>
+                <div class="divider"></div>
+                <img class="btn btn-mute" src="./src/images/template_imgs/speech_on_btn.png" title="Click To Mute" />
+                <div class="divider"></div>
+                <div id="fullscreen-btn" class="header-btn btn" title="Toggle Fullscreen">
+                  <svg id="fullscreen-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M10 3H3V10C3 10.26 3.10 10.51 3.29 10.70C3.48 10.89 3.73 11 4 11C4.26 11 4.51 10.89 4.70 10.70C4.89 10.51 5 10.26 5 10V6.41L9.29 10.70L9.36 10.77C9.56 10.92 9.80 11.00 10.04 10.99C10.29 10.98 10.52 10.87 10.70 10.70C10.87 10.52 10.98 10.29 10.99 10.04C11.00 9.80 10.92 9.56 10.77 9.36L10.70 9.29L6.41 5H10C10.26 5 10.51 4.89 10.70 4.70C10.89 4.51 11 4.26 11 4C11 3.73 10.89 3.48 10.70 3.29C10.51 3.10 10.26 3 10 3ZM20 13C19.73 13 19.48 13.10 19.29 13.29C19.10 13.48 19 13.73 19 14V17.58L14.70 13.29L14.63 13.22C14.43 13.07 14.19 12.99 13.95 13.00C13.70 13.01 13.47 13.12 13.29 13.29C13.12 13.47 13.01 13.70 13.00 13.95C12.99 14.19 13.07 14.43 13.22 14.63L13.29 14.70L17.58 19H14C13.73 19 13.48 19.10 13.29 19.29C13.10 19.48 13 19.73 13 20C13 20.26 13.10 20.51 13.29 20.70C13.48 20.89 13.73 21 14 21H21V14C21 13.73 20.89 13.48 20.70 13.29C20.51 13.10 20.26 13 20 13Z" />
+                  </svg>
+                </div>
+              </div>
             </section>
 
             <!-- * Project Intro Goes Here -->
@@ -153,68 +178,52 @@
               <p class="description">To Set the Beam and Slab using Flex System.</p>
               <span class="heading">Apparatus Materials:</span>
               <p class="description">
-                Tripod Stand, CT prop, fourway head, Aluminium Beam, Timber Beam, Plywood Sheathing, Beam Forming support. 
+                Tripod Stand, CT prop, fourway head, Aluminium Beam, Timber Beam, Plywood Sheathing, Beam Forming
+                support.
               </p>
             </div>
 
             <!-- * Steps Heading Template -->
             <div class="step-heading">
               <p class="step-title">Step 1</p>
-              <p class="step-description">
-                Calculation of cross-sectional area:
-              </p>
-            
+              <p class="step-description">Calculation of cross-sectional area:</p>
             </div>
-            
+
             <!-- * Content Adder Box -->
             <ul class="content-adder-box">
               <!-- <li class="btn content-adder">Footing</li> -->
             </ul>
 
             <!-- * Blink Arrow -->
-            <img
-                class="blinkArrow"
-                src="./src/images/template_imgs/blinkArrow.webp"
-              />
-            
-             <section class="anime-main">
-            <!-- <section class="anime-main" onmousemove="getCursor(event)"> -->
+            <img class="blinkArrow" src="./src/images/template_imgs/blinkArrow.webp" />
+
+            <section class="anime-main">
+              <!-- <section class="anime-main" onmousemove="getCursor(event)"> -->
               <!-- * Welcome note About Experiment-->
               <div class="welcome-box">
-                <img
-                  class="iit-logo"
-                  src="./src/images/template_imgs/iit-delhi-logo.png"
-                  alt=""
-                />
+                <img class="iit-logo" src="./src/images/template_imgs/iit-delhi-logo.png" alt="" />
                 <div class="title">
                   <span>Welcome to</span>
                   <span>Foundation in Beam Formwork Experiment</span>
-                  <span
-                    >of Formwork Technology in Civil Engineering Virtual
-                    Lab</span
-                  >
-                  <span
-                    >developed by Prof. K. N. Jha, Department of Civil
-                    Engineering, IIT Delhi.</span
-                  >
+                  <span>of Formwork Technology in Civil Engineering Virtual Lab</span>
+                  <span>developed by Prof. K. N. Jha, Department of Civil Engineering, IIT Delhi.</span>
                 </div>
                 <div class="prof-description">
                   <img
                     class="prof-img"
                     src="./src/images/template_imgs/prof_image_kn_jha.jpeg"
-                    alt="Prof. K. N. Jha Image"
-                  />
+                    alt="Prof. K. N. Jha Image" />
                   <span>Prof. K. N. Jha</span>
                   <span>IIT Delhi</span>
                 </div>
               </div>
 
               <!-- * Student Name section -->
-              <form onsubmit="return false" class="user-input">
+              <form onsubmit="return false;" class="user-input">
                 <p>Enter your name:</p>
                 <input type="text" name="" id="stuName" />
                 <p class="error">Please enter your name before start</p>
-                <input class="btn" id="nameSubmitBtn" type="submit" value="Start"/>
+                <input class="btn" id="nameSubmitBtn" type="submit" value="Start" />
               </form>
 
               <!-- * Calculations Table -->
@@ -232,9 +241,7 @@
                     <td class="cell"></td>
                   </tr>
                   <tr>
-                    <th class="cell" scope="col">
-                      Cross-sectional area (mm<sup>2</sup>)
-                    </th>
+                    <th class="cell" scope="col">Cross-sectional area (mm<sup>2</sup>)</th>
                     <td class="cell"></td>
                   </tr>
                 </tbody>
@@ -245,17 +252,10 @@
                 <section class="table__header">
                   <h4 style="margin-left: 32px">
                     Results<br />Date of test: <span id="date"></span><br />
-                                               Grade of Steel: 550 SD steel
+                    Grade of Steel: 550 SD steel
                   </h4>
                 </section>
-                <section
-                  class="table__body"
-                  style="
-                    display: flex;
-                    justify-content: center;
-                    overflow-y: overlay;
-                  "
-                >
+                <section class="table__body" style="display: flex; justify-content: center; overflow-y: overlay">
                   <table class="">
                     <tbody>
                       <tr>
@@ -263,38 +263,25 @@
                         <td class="cell">698</td>
                       </tr>
                       <tr>
-                        <th class="cell" scope="col">
-                          Length of specimen (mm)
-                        </th>
+                        <th class="cell" scope="col">Length of specimen (mm)</th>
                         <td class="cell">805</td>
                       </tr>
                       <tr>
                         <th class="cell" scope="col">
-                          Effective cross-sectional area,
-                          S<sub>o</sub>(mm<sup>2</sup>) =
-                          <img
-                            height="45"
-                            src="./src/images/S0_formula5"
-                            alt=""
-                          />
+                          Effective cross-sectional area, S<sub>o</sub>(mm<sup>2</sup>) =
+                          <img height="45" src="./src/images/S0_formula5" alt="" />
                         </th>
                         <td class="cell">110.4</td>
                       </tr>
                       <tr>
                         <th class="cell" scope="col">
                           Original gauge length L (mm) =
-                          <img
-                            height="20"
-                            src="./src/images/S0_formula3"
-                            alt=""
-                          />
+                          <img height="20" src="./src/images/S0_formula3" alt="" />
                         </th>
                         <td class="cell">59.4</td>
                       </tr>
                       <tr>
-                        <th class="cell" scope="col">
-                          Choosen gauge length L<sub>o</sub> (mm)
-                        </th>
+                        <th class="cell" scope="col">Choosen gauge length L<sub>o</sub> (mm)</th>
                         <td class="cell">60</td>
                       </tr>
                       <tr>
@@ -310,21 +297,15 @@
                         <td class="cell">1.25</td>
                       </tr>
                       <tr>
-                        <th class="cell" scope="col">
-                          Final gauge length, L<sub>u</sub> mm
-                        </th>
+                        <th class="cell" scope="col">Final gauge length, L<sub>u</sub> mm</th>
                         <td class="cell">77</td>
                       </tr>
                       <tr>
-                        <th class="cell" scope="col">
-                          Final diameter minimum (mm)
-                        </th>
+                        <th class="cell" scope="col">Final diameter minimum (mm)</th>
                         <td class="cell">7.1</td>
                       </tr>
                       <tr>
-                        <th class="cell" scope="col">
-                          % Elongation after fracture
-                        </th>
+                        <th class="cell" scope="col">% Elongation after fracture</th>
                         <td class="cell">28.33</td>
                       </tr>
                       <tr>
@@ -342,11 +323,9 @@
               </div>
 
               <!-- * Input box format for in anime questions -->
-              <form onsubmit="return false" class="temp-input">
-                <span class="text1"></span
-                ><input class="input" type="text" name="" id="ipnum" /><span
-                  class="text2"
-                ></span>
+              <form onsubmit="return false;" class="temp-input">
+                <span class="text1"></span><input class="input" type="text" name="" id="ipnum" /><span
+                  class="text2"></span>
                 <p class="error"></p>
                 <input class="submit-btn btn" type="submit" value="Submit" />
               </form>
@@ -394,20 +373,13 @@
                 </div>
                 <div class="student-detail">
                   <div class="row">
-                    <span
-                      style="text-transform: capitalize"
-                      class="bold red"
-                      id="certificateStuName"
-                      >Sneha Jadon</span
-                    >
+                    <span style="text-transform: capitalize" class="bold red" id="certificateStuName">Sneha Jadon</span>
                   </div>
                   <div class="row">
                     <span class="cursive" style="text-align: center"
                       >has succesfully performed Virtaul Lab Experiment on
                     </span>
-                    <span
-                      style="font-size: 1.5rem; text-transform: capitalize"
-                      class="bold sans red"
+                    <span style="font-size: 1.5rem; text-transform: capitalize" class="bold sans red"
                       >Foundation in Formwork</span
                     >
                   </div>
@@ -416,9 +388,7 @@
                     <span class="bold sans" id="quizScore">0</span>
                     <span class="bold sans">/5 Marks</span>
                     <span class="cursive">at</span> -->
-                    <span class="bold sans" id="certificateDate"
-                      >Date 10-10-2023</span
-                    >
+                    <span class="bold sans" id="certificateDate">Date 10-10-2023</span>
                   </div>
                   <div class="row">
                     <span class="cursive"
@@ -433,513 +403,263 @@
               <!-- * class main-window-imgs -->
               <!-- ! Example -->
 
-              <img
-                class="main-window-imgs"
-                src="./src/images/template_imgs/arrow.png"
-                title="arrow"
-                alt="arrow"
-              />
+              <img class="main-window-imgs" src="./src/images/template_imgs/arrow.png" title="arrow" alt="arrow" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/blinkArrow.webp"
                 title="blinkArrow"
-                alt="blinkArrow"
-              />
+                alt="blinkArrow" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/laerrow.png"
                 title="laerrow"
-                alt="laerrow"
-              />
+                alt="laerrow" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/laerrow2.png"
                 title="laerrow2"
-                alt="laerrow2"
-              />
+                alt="laerrow2" />
 
-              <img
-                class="main-window-imgs"
-                src="./src/images/template_imgs/logo.png"
-                title="logo"
-                alt="logo"
-              />
+              <img class="main-window-imgs" src="./src/images/template_imgs/logo.png" title="logo" alt="logo" />
 
-              <img
-                class="main-window-imgs"
-                src="./src/images/template_imgs/man.png"
-                title="man"
-                alt="man"
-              />
+              <img class="main-window-imgs" src="./src/images/template_imgs/man.png" title="man" alt="man" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/measurearrow.png"
                 title="measurearrow"
-                alt="measurearrow"
-              />
+                alt="measurearrow" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/measurearrow2.png"
                 title="measurearrow2"
-                alt="measurearrow2"
-              />
+                alt="measurearrow2" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/redsize.png"
                 title="redsize"
-                alt="redsize"
-              />
+                alt="redsize" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/speech_off_btn.png"
                 title="speech_off_btn"
-                alt="speech_off_btn"
-              />
+                alt="speech_off_btn" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/speech_on_btn.png"
                 title="speech_on_btn"
-                alt="speech_on_btn"
-              />
+                alt="speech_on_btn" />
 
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/talk_cloud.png"
                 title="talk_cloud"
-                alt="talk_cloud"
-              />
+                alt="talk_cloud" />
               <img
                 class="main-window-imgs"
                 src="./src/images/template_imgs/iit-delhi-logo.png"
                 title="iit-delhi-logo"
-                alt="iit-delhi-logo"
-              />
-              
-            
-<!-- ! Steps images start here -->
-
-<img
-class="main-window-imgs"
-src="./src/images/back_wall_full.png"
-alt="back_wall_full.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_1.png"
-alt="front_connector_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_10.png"
-alt="front_connector_10.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_11.png"
-alt="front_connector_11.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_12.png"
-alt="front_connector_12.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_2.png"
-alt="front_connector_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_3.png"
-alt="front_connector_3.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_4.png"
-alt="front_connector_4.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_5.png"
-alt="front_connector_5.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_6.png"
-alt="front_connector_6.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_7.png"
-alt="front_connector_7.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_8.png"
-alt="front_connector_8.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_9.png"
-alt="front_connector_9.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_1.png"
-alt="front_connector_nut_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_10.png"
-alt="front_connector_nut_10.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_11.png"
-alt="front_connector_nut_11.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_12.png"
-alt="front_connector_nut_12.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_2.png"
-alt="front_connector_nut_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_3.png"
-alt="front_connector_nut_3.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_4.png"
-alt="front_connector_nut_4.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_5.png"
-alt="front_connector_nut_5.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_6.png"
-alt="front_connector_nut_6.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_7.png"
-alt="front_connector_nut_7.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_8.png"
-alt="front_connector_nut_8.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_connector_nut_9.png"
-alt="front_connector_nut_9.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_1.png"
-alt="front_ct_prop_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_2.png"
-alt="front_ct_prop_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_3.png"
-alt="front_ct_prop_3.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_4.png"
-alt="front_ct_prop_4.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_base_1.png"
-alt="front_ct_prop_base_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_base_2.png"
-alt="front_ct_prop_base_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_pin_1.png"
-alt="front_ct_prop_pin_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_pin_2.png"
-alt="front_ct_prop_pin_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_pin_3.png"
-alt="front_ct_prop_pin_3.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_ct_prop_pin_4.png"
-alt="front_ct_prop_pin_4.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_1.png"
-alt="front_panel_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_2.png"
-alt="front_panel_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_3.png"
-alt="front_panel_3.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_4.png"
-alt="front_panel_4.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_5.png"
-alt="front_panel_5.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_6.png"
-alt="front_panel_6.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_7.png"
-alt="front_panel_7.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_panel_8.png"
-alt="front_panel_8.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_1.png"
-alt="front_wedge_pin_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_10.png"
-alt="front_wedge_pin_10.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_11.png"
-alt="front_wedge_pin_11.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_12.png"
-alt="front_wedge_pin_12.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_13.png"
-alt="front_wedge_pin_13.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_14.png"
-alt="front_wedge_pin_14.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_2.png"
-alt="front_wedge_pin_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_3.png"
-alt="front_wedge_pin_3.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_4.png"
-alt="front_wedge_pin_4.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_5.png"
-alt="front_wedge_pin_5.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_6.png"
-alt="front_wedge_pin_6.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_7.png"
-alt="front_wedge_pin_7.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_8.png"
-alt="front_wedge_pin_8.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/front_wedge_pin_9.png"
-alt="front_wedge_pin_9.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/left_stop_end.png"
-alt="left_stop_end.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/left_stop_end_waler_1.png"
-alt="left_stop_end_waler_1.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/left_stop_end_waler_1_nut.png"
-alt="left_stop_end_waler_1_nut.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/left_stop_end_waler_2.png"
-alt="left_stop_end_waler_2.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/left_stop_end_waler_2_nut.png"
-alt="left_stop_end_waler_2_nut.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/panel_back.png"
-alt="panel_back.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/panel_front.png"
-alt="panel_front.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/photoscape"
-alt="photoscape"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/right_stop_end_full.png"
-alt="right_stop_end_full.png"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/temp23"
-alt="temp23"
-/>
-
-<img
-class="main-window-imgs"
-src="./src/images/template_imgs"
-alt="template_imgs"
-/>
-<img
-class="main-window-imgs"
-src="./src/images/objective.png"
-alt="template_imgs"
-/>
-
-    
+                alt="iit-delhi-logo" />
+
+              <!-- ! Steps images start here -->
+
+              <img class="main-window-imgs" src="./src/images/back_wall_full.png" alt="back_wall_full.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_1.png" alt="front_connector_1.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_10.png" alt="front_connector_10.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_11.png" alt="front_connector_11.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_12.png" alt="front_connector_12.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_2.png" alt="front_connector_2.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_3.png" alt="front_connector_3.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_4.png" alt="front_connector_4.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_5.png" alt="front_connector_5.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_6.png" alt="front_connector_6.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_7.png" alt="front_connector_7.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_8.png" alt="front_connector_8.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_connector_9.png" alt="front_connector_9.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_1.png"
+                alt="front_connector_nut_1.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_10.png"
+                alt="front_connector_nut_10.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_11.png"
+                alt="front_connector_nut_11.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_12.png"
+                alt="front_connector_nut_12.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_2.png"
+                alt="front_connector_nut_2.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_3.png"
+                alt="front_connector_nut_3.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_4.png"
+                alt="front_connector_nut_4.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_5.png"
+                alt="front_connector_nut_5.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_6.png"
+                alt="front_connector_nut_6.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_7.png"
+                alt="front_connector_nut_7.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_8.png"
+                alt="front_connector_nut_8.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_connector_nut_9.png"
+                alt="front_connector_nut_9.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_1.png" alt="front_ct_prop_1.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_2.png" alt="front_ct_prop_2.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_3.png" alt="front_ct_prop_3.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_4.png" alt="front_ct_prop_4.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_ct_prop_base_1.png"
+                alt="front_ct_prop_base_1.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/front_ct_prop_base_2.png"
+                alt="front_ct_prop_base_2.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_pin_1.png" alt="front_ct_prop_pin_1.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_pin_2.png" alt="front_ct_prop_pin_2.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_pin_3.png" alt="front_ct_prop_pin_3.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_ct_prop_pin_4.png" alt="front_ct_prop_pin_4.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_1.png" alt="front_panel_1.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_2.png" alt="front_panel_2.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_3.png" alt="front_panel_3.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_4.png" alt="front_panel_4.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_5.png" alt="front_panel_5.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_6.png" alt="front_panel_6.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_7.png" alt="front_panel_7.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_panel_8.png" alt="front_panel_8.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_1.png" alt="front_wedge_pin_1.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_10.png" alt="front_wedge_pin_10.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_11.png" alt="front_wedge_pin_11.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_12.png" alt="front_wedge_pin_12.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_13.png" alt="front_wedge_pin_13.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_14.png" alt="front_wedge_pin_14.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_2.png" alt="front_wedge_pin_2.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_3.png" alt="front_wedge_pin_3.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_4.png" alt="front_wedge_pin_4.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_5.png" alt="front_wedge_pin_5.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_6.png" alt="front_wedge_pin_6.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_7.png" alt="front_wedge_pin_7.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_8.png" alt="front_wedge_pin_8.png" />
+
+              <img class="main-window-imgs" src="./src/images/front_wedge_pin_9.png" alt="front_wedge_pin_9.png" />
+
+              <img class="main-window-imgs" src="./src/images/left_stop_end.png" alt="left_stop_end.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/left_stop_end_waler_1.png"
+                alt="left_stop_end_waler_1.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/left_stop_end_waler_1_nut.png"
+                alt="left_stop_end_waler_1_nut.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/left_stop_end_waler_2.png"
+                alt="left_stop_end_waler_2.png" />
+
+              <img
+                class="main-window-imgs"
+                src="./src/images/left_stop_end_waler_2_nut.png"
+                alt="left_stop_end_waler_2_nut.png" />
+
+              <img class="main-window-imgs" src="./src/images/panel_back.png" alt="panel_back.png" />
+
+              <img class="main-window-imgs" src="./src/images/panel_front.png" alt="panel_front.png" />
+
+              <img class="main-window-imgs" src="./src/images/photoscape" alt="photoscape" />
+
+              <img class="main-window-imgs" src="./src/images/right_stop_end_full.png" alt="right_stop_end_full.png" />
+
+              <img class="main-window-imgs" src="./src/images/temp23" alt="temp23" />
+
+              <img class="main-window-imgs" src="./src/images/template_imgs" alt="template_imgs" />
+              <img class="main-window-imgs" src="./src/images/objective.png" alt="template_imgs" />
 
               <!-- * Videos -->
               <!-- <video muted class="main-window-videos" src="./src/videos/yoke_front_to_back.mp4"></video> -->
@@ -958,67 +678,25 @@ alt="template_imgs"
 
               <!-- * Image Box -->
               <div class="image-box">
-                <img class="image" src="" alt="">
+                <img class="image" src="" alt="" />
                 <p class="title">Image Box</p>
               </div>
 
-             <!-- * Temp texts for showing some text in anime -->
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-text"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-text2"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title1"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title2"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title3"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title4"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title5"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title6"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title7"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title8"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title9"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title10"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title11"
-              ></span>
-              <span
-                style="background-color: transparent; font-weight: bold"
-                class="temp temp-title12"
-              ></span>
+              <!-- * Temp texts for showing some text in anime -->
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-text"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-text2"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title1"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title2"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title3"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title4"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title5"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title6"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title7"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title8"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title9"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title10"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title11"></span>
+              <span style="background-color: transparent; font-weight: bold" class="temp temp-title12"></span>
             </section>
 
             <!-- * Anime Footer -->
@@ -1030,11 +708,7 @@ alt="template_imgs"
                 <p class="subtitle" id="subtitle"></p>
               </div>
               <btn class="btn btn-next">Next</btn>
-              <btn
-                class="btn btn-save"
-                style="position: absolute; right: 90px; bottom: 5px"
-                >Download</btn
-              >
+              <btn class="btn btn-save" style="position: absolute; right: 90px; bottom: 5px">Download</btn>
             </section>
           </main>
         </div>
