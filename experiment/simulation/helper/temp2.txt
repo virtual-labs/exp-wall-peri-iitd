@@ -1,0 +1,364 @@
+
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_back_full.png"
+        alt="column_back_full.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner.png"
+        alt="column_corner.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_2.png"
+        alt="column_corner_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_back_1.png"
+        alt="column_corner_back_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_back_2.png"
+        alt="column_corner_back_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_front_1.png"
+        alt="column_corner_front_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_front_2.png"
+        alt="column_corner_front_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_left.png"
+        alt="column_corner_left.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_left_1.png"
+        alt="column_corner_left_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_left_2.png"
+        alt="column_corner_left_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_right.png"
+        alt="column_corner_right.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_right_1.png"
+        alt="column_corner_right_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_corner_right_2.png"
+        alt="column_corner_right_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_front_kicker_brace.png"
+        alt="column_front_kicker_brace.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_front_panel.png"
+        alt="column_front_panel.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_front_push_prop_1.png"
+        alt="column_front_push_prop_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_front_push_prop_2.png"
+        alt="column_front_push_prop_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_front_push_prop_pin_1.png"
+        alt="column_front_push_prop_pin_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_front_push_prop_pin_2.png"
+        alt="column_front_push_prop_pin_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_left_full.png"
+        alt="column_left_full.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_right_full.png"
+        alt="column_right_full.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_1.png"
+        alt="column_wedge_pin_front_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_10.png"
+        alt="column_wedge_pin_front_10.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_11.png"
+        alt="column_wedge_pin_front_11.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_12.png"
+        alt="column_wedge_pin_front_12.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_2.png"
+        alt="column_wedge_pin_front_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_3.png"
+        alt="column_wedge_pin_front_3.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_4.png"
+        alt="column_wedge_pin_front_4.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_5.png"
+        alt="column_wedge_pin_front_5.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_6.png"
+        alt="column_wedge_pin_front_6.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_7.png"
+        alt="column_wedge_pin_front_7.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_8.png"
+        alt="column_wedge_pin_front_8.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_front_9.png"
+        alt="column_wedge_pin_front_9.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_left_1.png"
+        alt="column_wedge_pin_left_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_left_2.png"
+        alt="column_wedge_pin_left_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_left_3.png"
+        alt="column_wedge_pin_left_3.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_left_4.png"
+        alt="column_wedge_pin_left_4.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_left_5.png"
+        alt="column_wedge_pin_left_5.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_left_6.png"
+        alt="column_wedge_pin_left_6.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_right_1.png"
+        alt="column_wedge_pin_right_1.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_right_2.png"
+        alt="column_wedge_pin_right_2.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_right_3.png"
+        alt="column_wedge_pin_right_3.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_right_4.png"
+        alt="column_wedge_pin_right_4.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_right_5.png"
+        alt="column_wedge_pin_right_5.png"
+    />
+    
+    <img
+        class="main-window-imgs"
+        src="./src/images/column_wedge_pin_right_6.png"
+        alt="column_wedge_pin_right_6.png"
+    />
+    
+
+column_back_full:this.allImgsDom[13],
+column_corner:this.allImgsDom[14],
+column_corner_2:this.allImgsDom[15],
+column_corner_back_1:this.allImgsDom[16],
+column_corner_back_2:this.allImgsDom[17],
+column_corner_front_1:this.allImgsDom[18],
+column_corner_front_2:this.allImgsDom[19],
+column_corner_left:this.allImgsDom[20],
+column_corner_left_1:this.allImgsDom[21],
+column_corner_left_2:this.allImgsDom[22],
+column_corner_right:this.allImgsDom[23],
+column_corner_right_1:this.allImgsDom[24],
+column_corner_right_2:this.allImgsDom[25],
+column_front_kicker_brace:this.allImgsDom[26],
+column_front_panel:this.allImgsDom[27],
+column_front_push_prop_1:this.allImgsDom[28],
+column_front_push_prop_2:this.allImgsDom[29],
+column_front_push_prop_pin_1:this.allImgsDom[30],
+column_front_push_prop_pin_2:this.allImgsDom[31],
+column_left_full:this.allImgsDom[32],
+column_right_full:this.allImgsDom[33],
+column_wedge_pin_front_1:this.allImgsDom[34],
+column_wedge_pin_front_10:this.allImgsDom[35],
+column_wedge_pin_front_11:this.allImgsDom[36],
+column_wedge_pin_front_12:this.allImgsDom[37],
+column_wedge_pin_front_2:this.allImgsDom[38],
+column_wedge_pin_front_3:this.allImgsDom[39],
+column_wedge_pin_front_4:this.allImgsDom[40],
+column_wedge_pin_front_5:this.allImgsDom[41],
+column_wedge_pin_front_6:this.allImgsDom[42],
+column_wedge_pin_front_7:this.allImgsDom[43],
+column_wedge_pin_front_8:this.allImgsDom[44],
+column_wedge_pin_front_9:this.allImgsDom[45],
+column_wedge_pin_left_1:this.allImgsDom[46],
+column_wedge_pin_left_2:this.allImgsDom[47],
+column_wedge_pin_left_3:this.allImgsDom[48],
+column_wedge_pin_left_4:this.allImgsDom[49],
+column_wedge_pin_left_5:this.allImgsDom[50],
+column_wedge_pin_left_6:this.allImgsDom[51],
+column_wedge_pin_right_1:this.allImgsDom[52],
+column_wedge_pin_right_2:this.allImgsDom[53],
+column_wedge_pin_right_3:this.allImgsDom[54],
+column_wedge_pin_right_4:this.allImgsDom[55],
+column_wedge_pin_right_5:this.allImgsDom[56],
+column_wedge_pin_right_6:this.allImgsDom[57],
+
+
+column_back_full : new Dom("column_back_full"),
+column_corner : new Dom("column_corner"),
+column_corner_2 : new Dom("column_corner_2"),
+column_corner_back_1 : new Dom("column_corner_back_1"),
+column_corner_back_2 : new Dom("column_corner_back_2"),
+column_corner_front_1 : new Dom("column_corner_front_1"),
+column_corner_front_2 : new Dom("column_corner_front_2"),
+column_corner_left : new Dom("column_corner_left"),
+column_corner_left_1 : new Dom("column_corner_left_1"),
+column_corner_left_2 : new Dom("column_corner_left_2"),
+column_corner_right : new Dom("column_corner_right"),
+column_corner_right_1 : new Dom("column_corner_right_1"),
+column_corner_right_2 : new Dom("column_corner_right_2"),
+column_front_kicker_brace : new Dom("column_front_kicker_brace"),
+column_front_panel : new Dom("column_front_panel"),
+column_front_push_prop_1 : new Dom("column_front_push_prop_1"),
+column_front_push_prop_2 : new Dom("column_front_push_prop_2"),
+column_front_push_prop_pin_1 : new Dom("column_front_push_prop_pin_1"),
+column_front_push_prop_pin_2 : new Dom("column_front_push_prop_pin_2"),
+column_left_full : new Dom("column_left_full"),
+column_right_full : new Dom("column_right_full"),
+column_wedge_pin_front_1 : new Dom("column_wedge_pin_front_1"),
+column_wedge_pin_front_10 : new Dom("column_wedge_pin_front_10"),
+column_wedge_pin_front_11 : new Dom("column_wedge_pin_front_11"),
+column_wedge_pin_front_12 : new Dom("column_wedge_pin_front_12"),
+column_wedge_pin_front_2 : new Dom("column_wedge_pin_front_2"),
+column_wedge_pin_front_3 : new Dom("column_wedge_pin_front_3"),
+column_wedge_pin_front_4 : new Dom("column_wedge_pin_front_4"),
+column_wedge_pin_front_5 : new Dom("column_wedge_pin_front_5"),
+column_wedge_pin_front_6 : new Dom("column_wedge_pin_front_6"),
+column_wedge_pin_front_7 : new Dom("column_wedge_pin_front_7"),
+column_wedge_pin_front_8 : new Dom("column_wedge_pin_front_8"),
+column_wedge_pin_front_9 : new Dom("column_wedge_pin_front_9"),
+column_wedge_pin_left_1 : new Dom("column_wedge_pin_left_1"),
+column_wedge_pin_left_2 : new Dom("column_wedge_pin_left_2"),
+column_wedge_pin_left_3 : new Dom("column_wedge_pin_left_3"),
+column_wedge_pin_left_4 : new Dom("column_wedge_pin_left_4"),
+column_wedge_pin_left_5 : new Dom("column_wedge_pin_left_5"),
+column_wedge_pin_left_6 : new Dom("column_wedge_pin_left_6"),
+column_wedge_pin_right_1 : new Dom("column_wedge_pin_right_1"),
+column_wedge_pin_right_2 : new Dom("column_wedge_pin_right_2"),
+column_wedge_pin_right_3 : new Dom("column_wedge_pin_right_3"),
+column_wedge_pin_right_4 : new Dom("column_wedge_pin_right_4"),
+column_wedge_pin_right_5 : new Dom("column_wedge_pin_right_5"),
+column_wedge_pin_right_6 : new Dom("column_wedge_pin_right_6"),
